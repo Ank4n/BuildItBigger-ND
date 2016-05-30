@@ -3,7 +3,6 @@ package com.udacity.gradle.builditbigger;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
 
 import com.google.api.client.extensions.android.http.AndroidHttp;
@@ -17,7 +16,7 @@ import space.ankan.builditbigger.backend.myApi.MyApi;
 
 /**
  * Created by ankan.
- * TODO: Add a class comment
+ * This is the async task to load jokes from gce endpoint api
  */
 public class JokeAsyncTask extends AsyncTask<Void, Void, String> {
     private Fragment fragment;
@@ -76,7 +75,6 @@ public class JokeAsyncTask extends AsyncTask<Void, Void, String> {
         if (fragment!=null && fragment instanceof ActivityCallback) {
             ((ActivityCallback) fragment).showJoke(result);
         }
-        //Toast.makeText(context, result, Toast.LENGTH_LONG).show();
     }
 
     public interface ActivityCallback {

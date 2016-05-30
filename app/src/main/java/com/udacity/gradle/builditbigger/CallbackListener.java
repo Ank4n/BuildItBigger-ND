@@ -4,7 +4,7 @@ import java.util.concurrent.CountDownLatch;
 
 /**
  * Created by ankan.
- * TODO: Add a class comment
+ * This is a listener class to listen when the async task fetches the joke
  */
 public class CallbackListener {
 
